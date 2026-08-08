@@ -8,7 +8,8 @@
   <style>
     :root { --ink:#13253a; --soft:#405064; --paper:#f7f4ec; --white:#fffdf8; --rule:#c8bfae; --accent:#a4472d; --serif:Georgia,"Times New Roman",serif; --sans:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     * { box-sizing:border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.6; }
+    html, body { overscroll-behavior-y:none; }
+    body { min-height:100%; margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.6; }
     a { color:inherit; }
     .wrap { width:min(960px,calc(100% - 40px)); margin:0 auto; }
     header { background:var(--ink); color:var(--white); }
