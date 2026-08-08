@@ -70,6 +70,9 @@
       .section-head { align-items: flex-start; flex-direction: column; }
       .record { grid-template-columns: 68px 1fr; gap: 18px; }
       .status { grid-column: 2; }
+      .record > div:nth-child(2) { min-width: 0; }
+      .record h3 { overflow-wrap: anywhere; }
+      .record-link { grid-column: 2; justify-self: start; max-width: 100%; white-space: normal; text-align: center; }
       .principles-grid { grid-template-columns: 1fr; }
       .principle { min-height: 0; }
       .footer-inner { flex-direction: column; }
