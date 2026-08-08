@@ -31,12 +31,19 @@
     h2 { margin:0; font-family:var(--serif); font-size:clamp(1.8rem,4vw,2.7rem); font-weight:500; }
     .section-head { display:flex; justify-content:space-between; align-items:end; gap:24px; padding-bottom:18px; border-bottom:2px solid var(--ink); }
     .count { color:var(--soft); font-size:.88rem; font-weight:750; }
+    .response-entry { display:grid; grid-template-columns:170px 1fr auto; gap:24px; align-items:start; margin-top:22px; padding:28px 0; border-bottom:1px solid var(--rule); }
+    .response-date { color:var(--soft); font-size:.86rem; font-weight:700; }
+    .responder { margin:0; font-family:var(--serif); font-size:1.35rem; font-weight:600; }
+    .role { margin:2px 0 10px; color:var(--accent); font-size:.78rem; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
+    .response-summary { margin:0; color:var(--soft); font-size:.92rem; }
+    .response-link { display:inline-block; padding:10px 14px; border:1px solid var(--ink); font-size:.8rem; font-weight:800; letter-spacing:.04em; text-decoration:none; white-space:nowrap; }
+    .response-link:hover,.response-link:focus-visible { background:var(--ink); color:var(--white); }
     .empty { margin-top:22px; padding:32px; border:1px dashed #9d9587; background:rgba(255,253,248,.55); }
     .empty strong { display:block; margin-bottom:6px; font-family:var(--serif); font-size:1.25rem; }
     .empty p { margin:0; color:var(--soft); }
     .method { margin-top:48px; padding-top:24px; border-top:1px solid var(--rule); color:var(--soft); font-size:.88rem; }
     footer { padding:30px 0; border-top:1px solid var(--rule); color:var(--soft); font-size:.84rem; }
-    @media(max-width:650px){ .masthead{align-items:flex-start;flex-direction:column;padding:20px 0}.summary{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column} }
+    @media(max-width:650px){ .masthead{align-items:flex-start;flex-direction:column;padding:20px 0}.summary{grid-template-columns:1fr}.response-entry{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column} }
   </style>
 </head>
 <body>
@@ -67,8 +74,8 @@
       </div>
       <div class="panel">
         <p class="label">Response status</p>
-        <strong>No responses posted</strong>
-        <p>This means no response document has been added to this archive yet. It does not assert that no response was sent.</p>
+        <strong>1 response posted</strong>
+        <p>Kristofer Enlow, Township Trustee, responded on August 7, 2026.</p>
       </div>
     </section>
     <section aria-labelledby="responses-title">
@@ -77,12 +84,17 @@
           <p class="label">Correspondence thread</p>
           <h2 id="responses-title">Official responses</h2>
         </div>
-        <span class="count">0 responses posted</span>
+        <span class="count">1 response posted · Kristofer Enlow</span>
       </div>
-      <div class="empty">
-        <strong>No response documents are currently available.</strong>
-        <p>When replies are added, each entry will identify the responding official, title, response date, and link to the original document.</p>
-      </div>
+      <article class="response-entry">
+        <div class="response-date">August 7, 2026<br>5:30 PM</div>
+        <div>
+          <h3 class="responder">Kristofer Enlow</h3>
+          <p class="role">Lyon Township Trustee</p>
+          <p class="response-summary">Confirmed receipt, stated that the clerk’s office handles entry into the public record, and disclosed attending a family Kite Festival where Walbridge was one of several sponsors.</p>
+        </div>
+        <a class="response-link" href="Response_Kristofer_Enlow_2026-08-07.pdf">View response PDF ↗</a>
+      </article>
     </section>
     <p class="method">Archive note: documents are posted as primary sources. Response status reflects only the materials currently published in this archive and will be updated as additional correspondence is provided.</p>
   </main>
