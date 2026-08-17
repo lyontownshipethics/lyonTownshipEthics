@@ -33,12 +33,19 @@
     h2 { margin:0; font-family:var(--serif); font-size:clamp(1.8rem,4vw,2.7rem); font-weight:500; }
     .section-head { display:flex; justify-content:space-between; align-items:end; gap:24px; padding-bottom:18px; border-bottom:2px solid var(--ink); }
     .count { color:var(--soft); font-size:.88rem; font-weight:750; }
+    .response-entry { display:grid; grid-template-columns:170px 1fr auto; gap:24px; align-items:start; margin-top:22px; padding:28px 0; border-bottom:1px solid var(--rule); }
+    .response-date { color:var(--soft); font-size:.86rem; font-weight:700; }
+    .responder { margin:0; font-family:var(--serif); font-size:1.35rem; font-weight:600; }
+    .role { margin:2px 0 10px; color:var(--accent); font-size:.78rem; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
+    .response-summary { margin:0; color:var(--soft); font-size:.92rem; }
+    .response-link { display:inline-block; max-width:100%; padding:10px 14px; border:1px solid var(--ink); font-size:.8rem; font-weight:800; letter-spacing:.04em; text-decoration:none; white-space:nowrap; }
+    .response-link:hover,.response-link:focus-visible { background:var(--ink); color:var(--white); }
     .empty { margin-top:22px; padding:32px; border:1px dashed #9d9587; background:rgba(255,253,248,.55); }
     .empty strong { display:block; margin-bottom:6px; font-family:var(--serif); font-size:1.25rem; }
     .empty p { margin:0; color:var(--soft); }
     .method { margin-top:48px; padding-top:24px; border-top:1px solid var(--rule); color:var(--soft); font-size:.88rem; }
     footer { padding:30px 0; border-top:1px solid var(--rule); color:var(--soft); font-size:.84rem; }
-    @media(max-width:650px){ .masthead{align-items:flex-start;flex-direction:column;padding:20px 0}.summary{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.document-link{white-space:normal;text-align:center} }
+    @media(max-width:650px){ .masthead{align-items:flex-start;flex-direction:column;padding:20px 0}.summary{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.response-entry{grid-template-columns:1fr}.document-link,.response-link{white-space:normal;text-align:center} }
   </style>
 </head>
 <body>
@@ -80,12 +87,17 @@
           <p class="label">Correspondence thread</p>
           <h2 id="thread-title">Messages and responses</h2>
         </div>
-        <span class="count">No correspondence posted</span>
+        <span class="count">1 message · 0 official responses</span>
       </div>
-      <div class="empty">
-        <strong>The thread will begin here.</strong>
-        <p>Related emails and official responses will be added chronologically, with the sender, role, date, summary, and original PDF identified for each message.</p>
-      </div>
+      <article class="response-entry">
+        <div class="response-date">August 13, 2026<br>8:53 PM</div>
+        <div>
+          <h3 class="responder">Aaron Rinehimer</h3>
+          <p class="role">Citizen correspondence · Original proposal email</p>
+          <p class="response-summary">Sent “Supplemental Noise &amp; Infrasound Ordinance Proposal” to members of the Board of Trustees and Planning Commission, township staff, and municipal consultants. The email summarizes the proposal’s intended protections, oversight and enforcement provisions, relates it to Project Flex, and asks that the attached language be shared with municipal consultants.</p>
+        </div>
+        <a class="response-link" href="Original_Email_Aaron_Rinehimer_Noise_Ordinance_2026-08-13.pdf">View email PDF ↗</a>
+      </article>
     </section>
     <p class="method">Archive note: the original proposal is posted as a primary-source document. Descriptive summaries are provided for navigation and do not replace the source. Thread status reflects only materials currently published in this archive.</p>
   </main>
